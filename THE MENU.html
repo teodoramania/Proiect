@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>THE MENU</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-image: url('cafenea5.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.margine{
+  border: 3px solid rgb(255, 225, 0);
+  border-radius: 7px;
+  filter: blur(-1px);
+  
+
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+
+
+
+
+<body>
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black margine" style="font-size:90px">THE MENU</span>
+  </div>
+</header>
+
+
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide"><marquee width="150">THE MENU</marquee></span></h5>
+  <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+	<div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<table>
+ <tr>
+    <td>Bread Basket</td>
+<td> 18 RON </td>
+  </tr>
+  <tr>
+    <td>Avocado Toast</td>
+<td>28 RON </td>
+  </tr>
+  <tr>
+    <td>Waffles</td>
+<td> 30 RON </td>
+  </tr>
+ <tr>
+    <td>Scrambled Eggs</td>
+<td> 31 RON </td>
+  </tr>
+ <tr>
+    <td>Pancakes</td>
+<td> 27 RON </td>
+  </tr>
+ <tr>
+    <td>French Toast</td>
+<td> 35 RON </td>
+  </tr>
+ <tr>
+    <td>Panini</td>
+<td> 33 RON </td>
+  </tr>
+
+</table>
+
+</body>
+  </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+     <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<table>
+ <tr>
+    <td> Espresso </td>
+<td> 12 RON </td>
+  </tr>
+  <tr>
+    <td>Latte</td>
+<td>18 RON </td>
+  </tr>
+  <tr>
+    <td>Flat White</td>
+<td> 22 RON </td>
+  </tr>
+ <tr>
+    <td>Cappucino</td>
+<td> 25 RON </td>
+  </tr>
+ <tr>
+    <td>Hot Chocolate</td>
+<td> 20 RON </td>
+  </tr>
+ <tr>
+    <td>Green Tea</td>
+<td> 18 RON </td>
+  </tr>
+ <tr>
+    <td>Lemonade</td>
+<td> 28 RON </td>
+  </tr>
+
+</table>
+
+</body>
+    </div>  
+ <img src="coffee.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+</div>
+
+<script>
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</head>
+</html>

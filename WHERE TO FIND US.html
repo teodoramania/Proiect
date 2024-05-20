@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>WHERE TO FIND US</title>
+</head>
+<body>
+
+<head>
+<title>Golden mug</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.margine{
+  border: 3px solid rgb(255, 225, 0);
+  border-radius: 7px;
+  filter: blur(-1px);
+  
+
+}
+
+.bgimg {
+  background-image: url('cafenea4.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black margine" style="font-size:90px">WHERE TO FIND US</span>
+  </div>
+</header>
+
+<div class="w3-sand w3-grayscale w3-large">
+
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">
+
+<h1><marquee width="300">Where to find us</marquee></h1>
+
+    <p>You can find us in Bucharest, on Calea Victoriei 120, between 7am and 5pm.</p>
+<nav>
+    <a href="https://www.google.com/maps/place/Calea+Victoriei,+Bucure%C8%99ti/@44.4419809,26.0916589,17z/data=!3m1!4b1!4m6!3m5!1s0x40b1ff5ab3d80271:0xb02d76d0d3d34a0b!8m2!3d44.4419771!4d26.0942338!16zL20vMGJweGgx?entry=ttu"> Google Maps</a>
+</nav>
+    <img src="imagine.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+</div>
+
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+</footer>
+</body>
+
+</body>
+</html>
